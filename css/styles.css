@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.impulsonegocios.com/wp-content/uploads/2021/04/dukooo.jpg);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.banner .logo h3{
+    text-decoration: none;
+    font-family: 'Inspiration', sans-serif;
+    font-size: 100px;
+    color: #fff;
+    padding: 10px;
+}
+
+.youtube{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NIC26AS7ZNHNPOVDM2KIE36TDA.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+}
+
+.youtube .youtube-logo{
+    width: calc(40%);
+    display: block;
+}
+
+.youtube .button-youtube button{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    background-color: #E90909;
+    color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: -1px;
+}
+
+.insta{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://mundoindie.mx/wp-content/uploads/2022/03/BGR4463DCNEWVD5YZYJMXCT43U.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+}
+
+.insta .insta-logo{
+    width: 10%;
+    height: 25%;
+    display: block;
+}
+
+.insta .button-insta button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    background-color: #0522DA;
+    color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: -1px;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gallery img{
+    width: 48%;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #eaeaea;
+    padding: 15px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-align: center;
+}
