@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
+body, html{
+    height: 100vh;
+}
+
 body{
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
 }
 
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: url(https://www.impulsonegocios.com/wp-content/uploads/2021/04/dukooo.jpg);
+    background-image: url('https://www.impulsonegocios.com/wp-content/uploads/2021/04/dukooo.jpg');
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -30,69 +39,124 @@ body{
     padding: 10px;
 }
 
+.about article{
+    background-color: #0984e3;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
 .youtube{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NIC26AS7ZNHNPOVDM2KIE36TDA.jpg);
-    background-attachment: fixed;
+    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/NIC26AS7ZNHNPOVDM2KIE36TDA.jpg');
+    /* background-attachment: fixed; */
     background-position: center center;
     height: 100vh;
+    text-align: center;
 }
 
 .youtube .youtube-logo{
-    width: calc(40%);
-    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.youtube .button-youtube button{
+.youtube .youtube-logo img{
+    width: 30%;
+    /* display: block; */
+}
+
+.youtube .button-youtube a{
     display: block;
     width: 100%;
     padding: 20px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 25px;
-    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-color: #E90909;
     color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
+    text-decoration: none;
+    transition: all ease .4s;
+}
+
+.youtube .button-youtube a:hover{
+    background: #000;
+    padding: 20px 35px;
 }
 
 .insta{
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-flow: column;
     justify-content: center;
-    background-image: url(https://mundoindie.mx/wp-content/uploads/2022/03/BGR4463DCNEWVD5YZYJMXCT43U.jpg);
+    align-items: center;
+    width: 100%;
+    background-image: url('../img/O73NOUDUWFEZTCOVEK3O7UM5XA.jpg');
+    background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     height: 100vh;
+    text-align: center;
 }
 
 .insta .insta-logo{
-    width: 10%;
-    height: 25%;
-    display: block;
+    width: 100%;
+    text-align: center;
+    /* display: block; */
 }
 
-.insta .button-insta button{
+.insta .insta-logo {
+    width: 20%;
+    margin-bottom: 25px;
+}
+
+.insta .insta-logo i{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 80px;
+    line-height: 100px;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.insta .button-insta a{
     display: block;
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 25px;
-    font-family: 'roboto', sans-serif;
+    font-size: 20 px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color: #0522DA;
+    background-color: #3498db;
     color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
+    text-decoration: none;
+    padding: 15px 35px;
+    transition: all ease .4s;
+}
+
+.insta .button-insta a:hover{
+    background-color: #eaeaea;
+    color:#000;
+    padding: 20px 40px;
 }
 
 .gallery{
